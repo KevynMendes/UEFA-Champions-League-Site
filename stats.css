@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'uclFont';
+    src: url('font/champions-font.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('src/background.jpg');
+    background-size: 100%;
+    background-position: start;
+    color: #fff;
+    font-family: 'uclFont', sans-serif;
+    font-weight: bold;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem 0;
+}
+.title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    position: relative;
+    bottom: 3.8rem;
+    left: 1rem;
+    display: inline-block;
+    padding: 0.625rem 2rem;
+    background-color: rgba(28, 35, 242, 0.9);
+    border: solid;
+    color: #fff;
+    text-shadow: #000 ;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+  
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-left: 34rem;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    background-color: rgba(28, 35, 242, 0.9);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+header img{
+    position: relative;
+    bottom: 4rem;
+    left: 17rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: aqua;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.divider {
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.secondary {
+    color: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+h1{
+    background-color: rgba(28, 35, 242, 0.9);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.player-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: ease 6ms;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.player-avatar img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.player-details {
+    flex: 1;
+    color: #fff;
+
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: aqua;
+    
+}
+
+.stat-label {
+    color: #fff;
+}
+
+footer{
+    display: inline-block;
+}

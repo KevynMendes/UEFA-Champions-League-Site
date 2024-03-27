@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'uclFont';
+    src: url('font/champions-font.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('src/background.jpg');
+    background-size: 100%;
+    background-position: start;
+    color: #fff;
+    font-family: 'uclFont', sans-serif;
+    font-weight: bold;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#logo img {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    margin-right: -8rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-left: -9rem;
+}
+
+nav ul li {
+    display: inline;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    background-color: rgba(28, 35, 242, 0.9);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.slideshow-container {
+    width: 60rem;
+    margin: 1rem;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.text {
+    color: #fff;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#games {
+    position: relative;
+    bottom: 35.5rem;
+    left: 64rem;
+    font-size: 1.1rem;
+    width: 25rem;
+    text-align: left;
+}
+
+h1{
+    font-size: 1.98rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.game {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);;
+    border: solid  rgba(255, 255, 255, 0.5);;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.game-details {
+    font-weight: bold;
+   
+}
+
+.team-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.3rem;
+ 
+}
+
+#btn-toggle {
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-top: -32rem;
+    height: 9rem;
+}
+
+footer img {
+    width: 40rem;
+    height: 9rem;
+}
